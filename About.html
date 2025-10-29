@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About VIVA</title>
+  <link rel="stylesheet" href="mystyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="viva-header">
+    <a href="index.html" class="logo-link">
+      <img src="Images/VIVAlogo.png" alt="VIVA Logo" class="logo">
+    </a>
+    <h1 class="tagline">Vegas Investing in Visionary Action</h1>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav class="viva-nav">
+    <a href="about.html" class="nav-link active">About</a>
+    <a href="impact.html" class="nav-link">Impact</a>
+    <a href="events.html" class="nav-link">Events</a>
+    <a href="Get%20Involved.html" class="nav-link">Get Involved</a>
+    <a href="tickets.html" class="btn-tickets">Get Tickets</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+
+    <!-- WHAT MAKES VIVA DIFFERENT SECTION -->
+    <section class="viva-section about-intro">
+      <div class="container">
+        <div class="row">
+          <div class="text-section col-md-6">
+            <h2>What Makes VIVA Different?</h2>
+            <p>VIVA is more than a pitch event—it's a movement. A gathering of generous, visionary individuals coming together in Las Vegas to fuel community-rooted ideas pitched by local nonprofits, and reimagine what philanthropy can feel like. VIVA invites funders to the table not just to judge, but to connect, to collaborate, and to invest with heart. This is not a high-stakes showdown. It's a vibrant evening of shared purpose, and yes; strategic giving.</p>
+          </div>
+          <div class="image-section col-md-6">
+            <img src="Images/Dice.png" alt="Dice Illustration">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE SECTION -->
+    <section class="quote-section">
+      <div class="quote-box">
+        <p class="quote-text">"Alone we can do so little, Together we can do so much"</p>
+        <p class="quote-author">- Hellen Keller</p>
+      </div>
+    </section>
+
+    <!-- DIVIDER LINE -->
+    <div class="divider-line"></div>
+
+<!-- WHAT DRIVES VIVA SECTION -->
+<section class="viva-drives-section">
+  <h2 class="section-title">What Drives VIVA?</h2>
+  
+  <div class="cards-container">
+    
+    <!-- Mission Card -->
+    <div class="mission-card card" onclick="this.classList.toggle('expanded')">
+      <div class="label">
+        <h3 class="card-title">Mission</h3>
+      </div>
+      <div class="card-content">
+        <div class="star">✦</div>
+        <p class="card-text">To fuel visionary nonprofit ideas through storytelling and collaborative philanthropy.</p>
+      </div>
+      <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#fff" stroke-width="5"/></svg>
+    </div>
+
+    <!-- Vision Card -->
+    <div class="vision-card card" onclick="this.classList.toggle('expanded')">
+      <div class="label">
+        <h3 class="card-title">Vision</h3>
+      </div>
+      <div class="card-content">
+        <div class="star">✦</div>
+        <p class="card-text">A Las Vegas where community-driven solutions thrive through shared investment.</p>
+      </div>
+      <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#fff" stroke-width="5"/></svg>
+    </div>
+
+    <!-- Values Card -->
+    <div class="values-card card" onclick="this.classList.toggle('expanded')">
+      <div class="label">
+        <h3 class="card-title">Values</h3>
+      </div>
+      <div class="card-content">
+        <div class="star">✦</div>
+        <p class="card-text">Connection, inclusivity, transparency, impact, and innovation in philanthropy.</p>
+      </div>
+      <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#fff" stroke-width="5"/></svg>
+    </div>
+
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="viva-footer py-3">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <div class="footer-left d-flex align-items-center mb-3 mb-md-0">
+        <img src="images/VIVA_white.png" alt="WhiteVIVA Logo" class="footer-logo me-3">
+        <div>
+          <p>Email<br>Phone</p>
+        </div>
+      </div>
+      <div class="footer-icons mb-3 mb-md-0">
+        <a href="#"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="images/icon-linkedin.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+      </div>
+      <p class="mb-0">© 2025 VIVA. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/about.js"></script>
+</body>
+</html>

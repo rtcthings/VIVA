@@ -1,0 +1,527 @@
+/* My Custom CSS*/ 
+
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: "Source Sans 3", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+.viva-header {
+    background: linear-gradient(90deg, #ed1379, #ffa500);
+    height: 120px;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    text-decoration: none;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.viva-header .logo {
+    height: 150px;
+    width: auto;
+    padding-right: 20px;
+    padding-top: 7px; 
+   
+}
+
+.viva-header .tagline {
+    font-family: "PT Serif", serif;
+    color: #000;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0;
+    flex: 1;
+    text-align:left;
+}
+
+/* NAV */
+.viva-nav {
+    background-color: #000;
+    border-bottom: 2px solid #ed1379;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 20px 40px;
+    min-height: 60px;
+}
+
+.viva-nav .nav-link {
+  color: #ffa500 !important;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.viva-nav .nav-link:hover,
+.viva-nav .nav-link.active {
+  color: #ed1379 !important;
+}
+
+.btn-tickets {
+  background: #ed1379;
+  color: #fff;
+  border: 2px solid #ffa500;
+  border-radius: 15px;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 15px 24px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.btn-tickets:hover {
+  background: #ffa500;
+  color: #fff;
+}
+
+/* MAIN CONTENT SECTIONS */
+
+.home-header-img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.viva-section {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.viva-section h2 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  color: #ed1379;
+  margin-bottom: 8px;
+  font-size: 32px;
+}
+
+.viva-section h4 {
+  font-family: "Source Sans 3", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  color: #ffa500;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.viva-section p {
+  font-size: 17px;
+  color: #fff;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.text-section {
+  text-align: left;
+}
+
+.image-section img {
+  max-width: 100%;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+
+
+/* STANDOUTS */
+.viva-standouts {
+  background: repeating-radial-gradient(#ffa500, #ed1379);
+  color: #000;
+  padding: 60px 0;
+}
+
+.viva-standouts h2 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 8px;
+  font-size: 32px;
+}
+
+.viva-standouts h5 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 700;
+  color: #000;
+  font-size: 18px;
+}
+
+.viva-standouts p {
+  font-family: "Source Sans 3", sans-serif;
+  color: #000;
+  font-size: 16px;
+}
+
+/* Decorative line + stars */
+.text-pink {
+  color: #ed1379 !important;
+}
+
+.pink-line {
+    height: 3px;
+    width: auto;
+  background-color: linear-gradient(90deg, transparent, #ed1379, transparent);
+}
+
+/* Image styling */
+.viva-standouts img {
+  border: 3px solid #fff;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.viva-standouts img:hover {
+  transform: scale(1.03);
+}
+
+
+/* WHAT MAKES VIVA DIFFERENT */
+.about-intro {
+  padding: 60px 40px;
+  background-color: #000;
+}
+
+.about-intro .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-intro .text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-intro .text-section h2 {
+  font-family: "PT Serif", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ed1379;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 0;
+}
+
+.about-intro .text-section p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 17px;
+  color: #fff;
+  line-height: 1.7;
+  font-weight: 400;
+  margin-left: 20px; 
+}
+
+.about-intro .image-section {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-intro .image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.about-intro .image-section img:hover {
+  transform: scale(1.05);
+}
+
+/*  QUOTE SECTION */
+.quote-section {
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.quote-box {
+  border: 4px solid #ffa500;
+  border-radius: 30px;
+  padding: 40px 50px;
+  max-width: 1000px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.quote-text {
+  font-family: "PT Serif", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ed1379;
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+}
+
+.quote-author {
+  font-family: "PT Serif", serif;
+  font-size: 18px;
+  color: #ffa500;
+  margin: 0;text-align: right;
+}
+
+/* ==== DIVIDER LINE ==== */
+.divider-line {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ed1379, transparent);
+  margin: 40px 0;
+}
+
+/* ==== WHAT DRIVES VIVA SECTION ==== */
+.viva-drives-section {
+  padding: 60px 40px;
+  background-color: #000;
+}
+
+.section-title {
+  font-family: "PT Serif", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ed1379;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ==== CARD STYLING ==== */
+.card {
+  background: radial-gradient(#ed1379, #ffa500);
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  height: 120px;
+  padding: 40px 30px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.025);
+  text-align: center;
+  transition: height 0.6s ease, padding 0.6s ease;
+  width: 200px;
+  flex-direction: column;
+  
+    margin-left: 40px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(237, 19, 121, 0.4);
+}
+
+/* ==== CARD EXPANDED STATE ==== */
+.card.expanded {
+  height: 300px;
+  padding: 50px 30px;
+}
+
+
+
+.card-title {
+  font-family: "PT Serif", serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.card.expanded .card-title {
+  font-size: 35px;
+}
+
+/* ==== CARD CONTENT ==== */
+.card-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card.expanded .card-content {
+  opacity: 1;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.star {
+  font-size: 40px;
+  color: #ffeb3b;
+  margin: 0 0 20px 0;
+}
+
+.card-text {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  color: #fff;
+  max-width: 100%;
+}
+
+
+
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    height: auto;
+    min-height: 120px;
+  }
+
+  .card.expanded {
+    height: auto;
+  }
+}
+
+.chevron {
+  position: absolute;
+  bottom: 15px;
+  left: calc(50% - 15px);
+  transform: rotate(180deg);
+  transition: transform 0.6s ease;
+}
+
+.card.expanded .chevron {
+  transform: rotate(0deg);
+}
+
+.chevron:not(.card) {
+  display:hide
+}
+
+
+
+#wowslider-container1 .ws_images{
+    height: 30px;
+    width: auto;
+}
+
+
+
+
+/* FOOTER */
+.viva-footer {
+  background-color: #ed1379;
+  color: #fff;
+  font-family: "Source Sans 3", sans-serif;
+  padding: 10px 20px;
+}
+
+.viva-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;gap: 20px;
+}
+
+.black-line {
+  height: 3px;
+  width: 150px;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-left img {
+  height: 70px;
+  width: auto;
+}
+
+.footer-left h6 {
+  font-family: "PT Serif", serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  color: #fff;
+}
+
+.footer-left p {
+  font-size: 14px;
+  margin: 0;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icons a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons img {
+  height: 35px;
+  width: 35px;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons a:hover img {
+  transform: scale(1.1);
+}
+
+.viva-footer p {
+  font-size: 14px;
+  margin: 0;
+  color: #fff;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-intro .row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+}
