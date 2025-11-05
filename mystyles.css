@@ -696,7 +696,7 @@ body {
   color: #000;
 }
 
-/* ==== SLIDER DOTS ==== */
+/* SLIDER DOTS  */
 .slider-dots {
   display: flex;
   justify-content: center;
@@ -817,7 +817,7 @@ body {
   color: #fff;
 }
 
-/* ==== RESPONSIVE ==== */
+/* RESPONSIVE  */
 @media (max-width: 768px) {
   .cards-container {
     grid-template-columns: 1fr;
@@ -829,4 +829,3 @@ body {
   }
 
 }
-
