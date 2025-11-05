@@ -733,10 +733,22 @@ body {
 
 /* WOW Slider*/
 
-#wowslider-container1 .ws_images{
-    height: 30px;
-    width: auto;
+#wowslider-container1 {
+  max-width: 900px;  
+  margin: 120px auto 40px auto; 
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
+.ws_images img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 
 
