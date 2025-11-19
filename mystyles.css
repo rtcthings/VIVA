@@ -778,6 +778,10 @@ main {
   margin-bottom: 50px;
 }
 
+.star-accent {
+  color: #ffa500;
+}
+
 .nonprofit-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
