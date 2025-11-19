@@ -1,4 +1,4 @@
-/* ==== GLOBAL ==== */
+/*GLOBAL */
 body {
   background-color: #000;
   color: #fff;
@@ -7,7 +7,7 @@ body {
   padding: 0;
 }
 
-/* ==== HEADER ==== */
+/* HEADER */
 .viva-header {
   background: linear-gradient(90deg, #ed1379, #ffa500);
   height: 120px;
@@ -45,7 +45,7 @@ body {
   text-align: left;
 }
 
-/* ==== NAVIGATION ==== */
+/* NAV */
 .viva-nav {
   background-color: #000;
   border-bottom: 2px solid #ed1379;
@@ -94,7 +94,7 @@ body {
   color: #fff;
 }
 
-/* ==== DROPDOWN NAVIGATION ==== */
+/*DROPDOWN NAVIGATION*/
 .nav-dropdown {
   position: relative;
   display: inline-block;
@@ -183,7 +183,7 @@ body {
   display: block !important;
 }
 
-/* ==== MAIN CONTENT ==== */
+/* MAIN CONTENT */
 main {
   margin: 0;
   padding: 0;
