@@ -342,9 +342,7 @@ main {
   transition: transform 0.3s ease;
 }
 
-.about-intro .image-section img:hover {
-  transform: scale(1.05);
-}
+
 
 .quote-section {
   padding: 60px 40px;
