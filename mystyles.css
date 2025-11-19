@@ -230,7 +230,7 @@ main {
 }
 
 .image-section img {
-  max-width: 100%;
+  max-width: 80%;
   border-radius: 20px;
   transition: transform 0.3s ease;
 }
@@ -338,7 +338,6 @@ main {
   max-width: 80%;
   height: auto;
   border-radius: 20px;
-  border: 3px solid #ffa500;
   transition: transform 0.3s ease;
 }
 
