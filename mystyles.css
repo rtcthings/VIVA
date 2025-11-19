@@ -763,6 +763,11 @@ main {
 }
 
 /* NONPROFITS SECTION */
+
+.star-accent {
+  color: #ffa500;
+}
+
 .nonprofits-section {
   background-color: #000;
   color: #fff;
@@ -778,9 +783,6 @@ main {
   margin-bottom: 50px;
 }
 
-.star-accent {
-  color: #ffa500;
-}
 
 .nonprofit-grid {
   display: grid;
