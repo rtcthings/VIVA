@@ -9,14 +9,14 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="mystyles.css" />
 
   <!-- Start WOWSlider.com HEAD section -->
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <script type="text/javascript" src="jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
   <!-- End WOWSlider.com HEAD section -->
 </head>
 <body>
@@ -29,47 +29,29 @@
     <h1 class="tagline">Vegas Investing in Visionary Action</h1>
   </header>
 
-<nav class="navbar navbar-expand-lg navbar-dark viva-nav">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">VIVA</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="impact.html">Impact</a></li>
-
-        <!-- Events dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="eventsDrop" role="button"
-             data-bs-toggle="dropdown" aria-expanded="false">Events</a>
-          <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="Events.html active">2025</a></li>
-            <li><a class="dropdown-item disabled" href="#">2026</a></li>
-          </ul>
-        </li>
-
-        <!-- Get Involved dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="involveDrop" role="button"
-             data-bs-toggle="dropdown" aria-expanded="false">Get Involved</a>
-          <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="Become a Funder.html">Become a Funder</a></li>
-            <li><a class="dropdown-item" href="Register Your Nonprofit.html">Register Your Nonprofit</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a class="btn btn-outline-light btn-sm ms-2" href="tickets.html">Get Tickets</a>
-        </li>
-      </ul>
+ <nav class="viva-nav">
+  <a href="About.html" class="nav-link">About</a>
+  <a href="Impact.html" class="nav-link">Impact</a>
+  
+  <div class="nav-dropdown">
+    <span class="nav-link dropdown-toggle active">Events</span>
+    <div class="dropdown-menu">
+      <a href="Events.html" class="dropdown-item active">2025</a>
+      <span class="dropdown-item disabled">2026</span>
     </div>
   </div>
+
+  <div class="nav-dropdown">
+    <span class="nav-link dropdown-toggle">Get Involved</span>
+    <div class="dropdown-menu">
+      <a href="Become a Funder.html" class="dropdown-item">Become a Funder</a>
+      <a href="Register Your Nonprofit.html" class="dropdown-item">Register Your Nonprofit</a>
+    </div>
+  </div>
+
+  <a href="tickets.html" class="btn-tickets">Get Tickets</a>
 </nav>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
   <!-- SLIDER SECTION -->
   <section class="slider-section">
     <div id="wowslider-container1" class="centered-slider">
@@ -90,116 +72,89 @@
       <div class="ws_shadow"></div>
     </div>
 
-    <script type="text/javascript" src="wowslider.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="engine1/wowslider.js"></script>
+    <script type="text/javascript" src="engine1/script.js"></script>
 
     <p class="slider-caption">
-      VIVA 2025 brings together community members, donors, and changemakers to inspire new Las Vegas ventures in visionary action. 
-      This year's recipients embody the drive for impact, and the community raised $70,000.
+      VIVA 2025 brought together community members, donors, and changemakers to inspire new Las Vegas ventures in visionary action. 
     </p>
   </section>
-
-  
+    
 
   <!-- FEATURED NONPROFITS -->
- <section class="nonprofits-section">
+<section class="nonprofits-section">
   <h2 class="section-title"><span class="star-accent">✦</span> VIVA 2025 Featured Nonprofits <span class="star-accent">✦</span></h2>
 
     <div class="nonprofit-grid">
 
-     <div class="container px-2">
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-    <!-- 1  Ability Center  -->
-    <div class="col" id="innovator">
-      <div class="nonprofit-card gold-border h-100">
-        <img src="images/AbilityCenter.png" alt="The Ability Center" class="nonprofit-logo">
-        <p class="org-name">The Ability Center</p>
+      <!-- Row 1 -->
+
+<div class="nonprofit-card gold-border" id="innovator">
+  <img src="AbilityCenter.png" alt="The Ability Center" class="nonprofit-logo">
+    <p class="org-name">The Ability Center</p>
         <a href="https://abilitycenter.org" target="_blank" class="org-link">Visit Website</a>
       </div>
-    </div>
 
-    <!-- 2  Ashley Strong  -->
-    <div class="col">
-      <div class="nonprofit-card gold-border h-100">
-        <img src="images/AshleyStrong.png" alt="Ashley Strong Foundation" class="nonprofit-logo">
+      <div class="nonprofit-card gold-border">
+        <img src="AshleyStrong.png" alt="Ashley Strong Foundation" class="nonprofit-logo">
         <p class="org-name">Ashley Strong Foundation</p>
         <a href="https://ashleystrongfoundation.org" target="_blank" class="org-link">Visit Website</a>
       </div>
-    </div>
 
-    <!-- 3  Collaboration Center  -->
-    <div class="col">
-      <div class="nonprofit-card pink-border h-100">
-        <img src="images/Collabcenter.png" alt="Collaboration Center Foundation" class="nonprofit-logo">
+      <!-- Row 2 -->
+      <div class="nonprofit-card pink-border">
+        <img src="Collabcenter.png" alt="Collaboration Center Foundation" class="nonprofit-logo">
         <p class="org-name">Collaboration Center Foundation</p>
         <a href="https://collaborationcenter.org" target="_blank" class="org-link">Visit Website</a>
       </div>
-    </div>
 
-    <!-- 4  Green Our Planet  (stand-out) -->
-    <div class="col" id="goat">
-      <div class="nonprofit-card pink-border h-100">
-        <img src="images/Greenourplanet.png" alt="Green Our Planet" class="nonprofit-logo">
+       <div class="nonprofit-card pink-border" id="goat">
+  <img src="Greenourplanet.png" alt="Green Our Planet" class="nonprofit-logo">
         <p class="org-name">Green Our Planet</p>
         <a href="https://greenourplanet.org" target="_blank" class="org-link">Visit Website</a>
       </div>
-    </div>
 
-    <!-- 5  Hope Means Nevada  -->
-    <div class="col">
-      <div class="nonprofit-card gold-border h-100">
-        <img src="images/HopeMeansNV.png" alt="Hope Means Nevada" class="nonprofit-logo">
+      <!-- Row 3 -->
+      <div class="nonprofit-card gold-border">
+        <img src="HopeMeansNV.png" alt="Hope Means Nevada" class="nonprofit-logo">
         <p class="org-name">Hope Means Nevada</p>
         <a href="https://hopemeansnevada.org" target="_blank" class="org-link">Visit Website</a>
       </div>
-    </div>
 
-    <!-- 6  Lighthouse  -->
-    <div class="col">
-      <div class="nonprofit-card gold-border h-100">
-        <img src="images/Lighthouse.png" alt="Lighthouse Charities" class="nonprofit-logo">
+      <div class="nonprofit-card gold-border">
+        <img src="Lighthouse.png" alt="Lighthouse Charities" class="nonprofit-logo">
         <p class="org-name">Lighthouse Charities</p>
         <a href="https://lighthousecharities.org" target="_blank" class="org-link">Visit Website</a>
       </div>
-    </div>
 
-    <!-- 7  Nature Conservancy  -->
-    <div class="col">
-      <div class="nonprofit-card pink-border h-100">
-        <img src="images/TNC.png" alt="The Nature Conservancy" class="nonprofit-logo">
+      <!-- Row 4 -->
+      <div class="nonprofit-card pink-border">
+        <img src="TNC.png" alt="The Nature Conservancy" class="nonprofit-logo">
         <p class="org-name">The Nature Conservancy</p>
         <a href="https://nature.org" target="_blank" class="org-link">Visit Website</a>
       </div>
-    </div>
 
-    <!-- 8  NF Network  (stand-out) -->
-    <div class="col" id="legacy">
-      <div class="nonprofit-card pink-border h-100">
-        <img src="images/NFNetwork.png" alt="NF Network" class="nonprofit-logo">
+      <div class="nonprofit-card pink-border" id="legacy">
+  <img src="NFNetwork.png" alt="NF Network" class="nonprofit-logo">
         <p class="org-name">NF Network</p>
         <a href="https://nfnetwork.org" target="_blank" class="org-link">Visit Website</a>
       </div>
-    </div>
 
-    <!-- 9  Opioid Free America  -->
-    <div class="col">
-      <div class="nonprofit-card gold-border h-100">
-        <img src="images/OpioidFree.png" alt="Opioid Free America" class="nonprofit-logo">
+      <!-- Row 5 -->
+      <div class="nonprofit-card gold-border">
+        <img src="OpioidFree.png" alt="Opioid Free America" class="nonprofit-logo">
         <p class="org-name">Opioid Free America</p>
         <a href="https://opioidfreeamerica.org" target="_blank" class="org-link">Visit Website</a>
       </div>
-    </div>
 
-    <!-- 10  Positively Arts  (stand-out) -->
-    <div class="col" id="spark">
-      <div class="nonprofit-card gold-border h-100">
-        <img src="images/PositiveArts.png" alt="Positively Arts" class="nonprofit-logo">
+      <div class="nonprofit-card gold-border" id="spark">
+        <img src="PositiveArts.png" alt="Positively Arts" class="nonprofit-logo">
         <p class="org-name">Positively Arts</p>
         <a href="https://positivelyarts.org" target="_blank" class="org-link">Visit Website</a>
       </div>
+
     </div>
-  </div>
-</div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="viva-footer">
