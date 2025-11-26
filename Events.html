@@ -29,27 +29,45 @@
     <h1 class="tagline">Vegas Investing in Visionary Action</h1>
   </header>
 
- <nav class="viva-nav">
-  <a href="About.html" class="nav-link">About</a>
-  <a href="Impact.html" class="nav-link">Impact</a>
-  
-  <div class="nav-dropdown">
-    <span class="nav-link dropdown-toggle active">Events</span>
-    <div class="dropdown-menu">
-      <a href="Events.html" class="dropdown-item active">2025</a>
-      <span class="dropdown-item disabled">2026</span>
+<nav class="navbar navbar-expand-lg navbar-dark viva-nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">VIVA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="impact.html">Impact</a></li>
+
+        <!-- Events dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="eventsDrop" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">Events</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="Events.html active">2025</a></li>
+            <li><a class="dropdown-item disabled" href="#">2026</a></li>
+          </ul>
+        </li>
+
+        <!-- Get Involved dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="involveDrop" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">Get Involved</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="Become a Funder.html">Become a Funder</a></li>
+            <li><a class="dropdown-item" href="Register Your Nonprofit.html">Register Your Nonprofit</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="btn btn-outline-light btn-sm ms-2" href="tickets.html">Get Tickets</a>
+        </li>
+      </ul>
     </div>
   </div>
-
-   <div class="nav-dropdown">
-    <span class="nav-link dropdown-toggle">Get Involved</span>
-    <div class="dropdown-menu">
-      <a href="Become a Funder.html" class="dropdown-item">Become a Funder</a>
-      <a href="Register Your Nonprofit.html" class="dropdown-item active">Register Your Nonprofit</a>
-    </div>
-  </div>
-
-  <a href="tickets.html" class="btn-tickets">Get Tickets</a>
 </nav>
 
   <!-- SLIDER SECTION -->
