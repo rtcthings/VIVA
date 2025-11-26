@@ -235,7 +235,7 @@ main {
 }
 
 .home-header-img {
-  max-width: 40%;
+  max-width: 30%;
   height: auto;
   display: block;
   margin: 0 auto 20px auto;
@@ -275,8 +275,8 @@ main {
 }
 
 .image-section img {
-  max-width: 70%;
-  border-radius: 20px;
+  max-width: 60%;
+  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
