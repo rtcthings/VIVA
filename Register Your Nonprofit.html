@@ -21,7 +21,7 @@
  <!-- HEADER -->
 <header class="viva-header">
   <a href="index.html" class="logo-link">
-    <img src="Images/VIVAlogo.png" alt="VIVA Logo" class="logo">
+    <img src="VIVAlogo.png" alt="VIVA Logo" class="logo">
   </a>
   <h1 class="tagline">Vegas Investing in Visionary Action</h1>
 </header>
@@ -41,21 +41,124 @@
   <div class="nav-dropdown">
     <span class="nav-link dropdown-toggle active">Get Involved</span>
     <div class="dropdown-menu">
-      <a href="become-funder.html" class="dropdown-item active">Become a Funder</a>
-      <a href="register-nonprofit.html" class="dropdown-item">Register Your Nonprofit</a>
+      <a href="Become%20a%20Funder.html" class="dropdown-item">Become a Funder</a>
+      <a href="Register%20Your%20Nonprofit.html" class="dropdown-item active">Register Your Nonprofit</a>
     </div>
   </div>
 
   <a href="tickets.html" class="btn-tickets">Get Tickets</a>
 </nav>
   
+  <!-- MAIN CONTENT -->
+<main>
+
+    <!-- NONPROFIT INFO SECTION -->
+    <section class="nonprofit-section">
+      <div class="nonprofit-wrapper">
+        
+        <!-- Left Column -->
+        <div class="nonprofit-left">
+          <h2>Join the VIVA Community</h2>
+          <p>VIVA celebrates visionary nonprofits that are making Las Vegas stronger, more resilient, and more connected. By registering your nonprofit, you'll have the opportunity to share your mission, connect with local funders, and be considered for our next round of community granting.</p>
+        </div>
+
+        <div class="nonprofit-right">
+  <h3>What We're Looking For</h3>
+  <p class="looking-intro">We're seeking nonprofits that are:</p>
   
+  <div class="looking-for">
+    <span class="looking-icon">✦</span>
+    <div class="looking-content">
+      <strong>Innovative</strong>
+      <p>bringing fresh ideas to local challenges.</p>
+    </div>
+  </div>
+
+  <div class="looking-for">
+    <span class="looking-icon">✦</span>
+    <div class="looking-content">
+      <strong>Community-Focused</strong>
+      <p>rooted in serving and uplifting Las Vegas.</p>
+    </div>
+  </div>
+
+  <div class="looking-for">
+    <span class="looking-icon">✦</span>
+    <div class="looking-content">
+      <strong>Impact-Driven</strong>
+      <p>focused on measurable outcomes for the community.</p>
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section class="form-section">
+      <div class="form-box">
+        <h2 class="form-heading">Tell Us About Your Nonprofit</h2>
+
+        <form action="mailto:ciara@lincolndynamic.org" method="POST" enctype="text/plain">
+          <div class="form-grid">
+            
+            <!-- Left Column - Form Fields -->
+            <div class="form-col-left">
+              <input type="text" name="organization" placeholder="Organization Name" required>
+              <input type="text" name="contactname" placeholder="Contact Person (Full Name)" required>
+              <input type="email" name="email" placeholder="Email Address" required>
+              <input type="tel" name="phone" placeholder="Phone Number (optional)">
+              <input type="text" name="website" placeholder="Website / Social Media Links">
+              <textarea name="mission" placeholder="Brief Description of Your Mission" required></textarea>
+            </div>
+
+            <!-- Right Column - Large Textarea -->
+            <div class="form-col-right">
+              <textarea name="message" placeholder="Type your message here" required></textarea>
+            </div>
+
+          </div>
+
+          <!-- Bottom Row - Textarea + Selects -->
+          <div class="form-bottom">
+            <textarea name="impact" placeholder="How does your organization create impact in the Las Vegas community?" required></textarea>
+            
+            <div class="form-selects">
+              <select name="focus" required>
+                <option value="">Select Area of Focus</option>
+                <option value="education">Education</option>
+                <option value="health">Health & Wellness</option>
+                <option value="community">Housing</option>
+                <option value="environment">Environmental Sustainability</option>
+                <option value="youth">Youth Services</option>
+                <option value="arts">Creative Arts</option>
+                <option value="other">Other</option>
+              </select>
+
+              <select name="nonprofit-status" required>
+                <option value="">Are you a 501(c)(3)?</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="pending">Pending</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-submit">Submit for Consideration</button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
   
    <!-- FOOTER -->
   <footer class="viva-footer">
     <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
       <div class="footer-left d-flex align-items-center mb-3 mb-md-0">
-        <img src="images/VIVA_white.png" alt="WhiteVIVA Logo" class="footer-logo">
+        <img src="VIVA_white.png" alt="WhiteVIVA Logo" class="footer-logo">
         <div>
           <p>Email<br>Phone</p>
         </div>
