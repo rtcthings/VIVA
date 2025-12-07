@@ -347,40 +347,45 @@ html {
   background-color: #000;
 }
 
-
 .about-intro .text-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding: 0 20px; 
 }
+
 
 .about-intro .text-section h2 {
   font-family: "PT Serif", serif;
   font-size: 32px;
   font-weight: 700;
   color: #ed1379;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-top: 0;
+  margin: 0 0 12px 0;
+  text-align: left;
+  line-height: 1.2;
 }
 
 .about-intro .text-section p {
   font-family: "Source Sans 3", sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   color: #fff;
-  line-height: 1.7;
+  line-height: 1.35;
   font-weight: 400;
-  margin-left: 20px;
+  margin: 0;
+  max-width: 480px; 
+  text-align: left;
 }
 
+
 .about-intro .image-section {
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .about-intro .image-section img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 420px; 
   height: auto;
   border-radius: 20px;
   transition: transform 0.3s ease;
@@ -389,6 +394,25 @@ html {
 .about-intro .image-section img:hover {
   transform: scale(1.05);
 }
+
+
+@media (max-width: 768px) {
+  .about-intro .text-section {
+    text-align: center;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .about-intro .text-section h2,
+  .about-intro .text-section p {
+    text-align: center;
+  }
+
+  .about-intro {
+    padding: 40px 20px;
+  }
+}
+
 
 .quote-section {
   padding: 60px 40px;
