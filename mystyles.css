@@ -72,6 +72,39 @@ body {
   color: #ed1379 !important;
 }
 
+/* Center links and give them space */
+.viva-nav .navbar-nav .nav-item {
+  margin: 0 18px;
+}
+
+/* Mobile: reduce side padding so menu looks clean and full width */
+@media (max-width: 991.98px) {
+  .viva-nav {
+    padding: 10px 16px;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 8px 0;
+  }
+
+  .btn-tickets {
+    width: 100%;
+  }
+
+  .viva-nav .navbar-toggler {
+    margin-left: auto;
+    border-color: #ed1379;
+  }
+
+  .navbar-toggler-icon {
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org%2F2000%2Fsvg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ed1379' stroke-width='3' d='M5 7h20M5 15h20M5 23h20'/%3E%3C/svg%3E");
+  }
+}
 
 
 @media (max-width: 991.98px) {
