@@ -350,7 +350,6 @@ html {
 
 .about-intro .text-section {
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
