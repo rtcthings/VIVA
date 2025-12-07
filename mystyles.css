@@ -808,7 +808,7 @@ html {
 
 .centered-slider {
   max-width: 400px;
-  height: 300px;
+  height: 400px;
   margin: 0 auto 20px auto;
   border-radius: 20px;
   overflow: hidden;
@@ -816,7 +816,7 @@ html {
 }
 
 .centered-slider .ws_images ul {
-  height: 300px !important;
+  height: 384px !important;
 }
 
 .centered-slider .ws_images img {
@@ -840,18 +840,6 @@ html {
   margin: 20px auto 0 auto;
   line-height: 1.6;
   padding: 0 20px;
-}
-
-
-#wowslider-container1 {
-  height: 550px !important; 
-}
-
-
-#wowslider-container1 .ws_images img {
-  object-fit: contain !important;
-  height: 100% !important;
-  width: auto !important;
 }
 
 
