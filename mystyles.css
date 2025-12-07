@@ -1447,11 +1447,13 @@ textarea {
 .footer-icons {
   display: flex;
   gap: 15px;
+  border-radius: 20px;
 }
 
 .footer-icons a {
   display: inline-block;
   transition: transform 0.3s ease;
+  border-radius: 20px;
 }
 
 .footer-icons img {
