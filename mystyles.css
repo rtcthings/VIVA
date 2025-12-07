@@ -1395,18 +1395,6 @@ textarea {
 }
 
 
-/* Footer */
-.viva-footer {
-  background: #111;
-  color: #fff;
-  text-align: center;
-  padding: 1.5rem 1rem;
-}
-
-.footer-icons img {
-  width: 25px;
-  margin: 0 8px;
-}
 
 
 
@@ -1475,7 +1463,7 @@ textarea {
   height: 35px;
   width: 35px;
   transition: transform 0.3s ease;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .footer-icons a:hover img {
