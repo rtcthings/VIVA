@@ -842,6 +842,19 @@ html {
   padding: 0 20px;
 }
 
+
+#wowslider-container1 {
+  height: 550px !important; 
+}
+
+
+#wowslider-container1 .ws_images img {
+  object-fit: contain !important;
+  height: 100% !important;
+  width: auto !important;
+}
+
+
 /* NONPROFITS SECTION */
 .nonprofits-section {
   background-color: #000;
