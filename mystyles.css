@@ -234,11 +234,11 @@ main {
   padding: 0;
 }
 
-.homeheader img {
-  max-width: 50%;
+.home-header-img {
+  max-width: 40%;
   height: auto;
   display: block;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 30px auto;
   padding: 0;
 }
 
