@@ -347,14 +347,6 @@ html {
   background-color: #000;
 }
 
-.about-intro .row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 .about-intro .text-section {
   display: flex;
