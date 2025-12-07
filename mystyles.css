@@ -1453,13 +1453,11 @@ textarea {
 .footer-icons a {
   display: inline-block;
   transition: transform 0.3s ease;
-  border-radius: 20px;
 }
 
 .footer-icons img {
   height: 35px;
   width: 35px;
-  border-radius: 20px;
   transition: transform 0.3s ease;
 }
 
