@@ -1447,7 +1447,7 @@ textarea {
 .footer-icons {
   display: flex;
   gap: 15px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .footer-icons a {
