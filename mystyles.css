@@ -657,7 +657,7 @@ html {
 
 /* FOUNDERS SECTION */
 .founders-section {
-  padding: 50px 20px;
+  padding: 35px 20px 30px 20px;  
   background-color: #000;
   text-align: center;
 }
@@ -667,14 +667,14 @@ html {
   font-size: 32px;
   font-weight: 700;
   color: #ffa500;
-  margin-bottom: 60px;
+  margin-bottom: 32px;  
 }
 
 .founders-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  max-width: 1200px;
+  gap: 24px;                 
+  max-width: 900px;           
   margin: 0 auto;
   align-items: center;
 }
@@ -683,8 +683,9 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 10px;              
 }
+
 
 .founder-item img {
   max-width: 150px;
@@ -704,6 +705,7 @@ html {
   margin: 0;
 }
 
+
 .founder-person {
   background: #ffb734;
   color: #fff;
@@ -716,14 +718,15 @@ html {
   width: fit-content;
 }
 
+
 .founder-center {
   grid-column: 2;
-  margin-top: 20px;
+  margin-top: 8px;      
 }
 
 .founder-bottom {
   grid-column: 2;
-  margin-top: 20px;
+  margin-top: 8px;          
 }
 
 
