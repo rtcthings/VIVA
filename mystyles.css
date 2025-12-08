@@ -72,12 +72,11 @@ body {
   color: #ed1379 !important;
 }
 
-/* Center links and give them space */
+
 .viva-nav .navbar-nav .nav-item {
   margin: 0 18px;
 }
 
-/* Mobile: reduce side padding so menu looks clean and full width */
 @media (max-width: 991.98px) {
   .viva-nav {
     padding: 10px 16px;
@@ -426,6 +425,7 @@ html {
   width: 100%;
   max-width: 380px;           
   height: auto;
+  padding-left: 20px;
 }
 
 
