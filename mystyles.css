@@ -1,3 +1,4 @@
+
 body {
   background-color: #000;
   color: #fff;
@@ -13,8 +14,6 @@ body {
   padding: 5px 20px;
   display: flex;
   align-items: center;
-  position: relative;
-  z-index: 1000;
 }
 
 .logo-link {
@@ -53,8 +52,6 @@ body {
   gap: 40px;
   padding: 15px 270px;
   min-height: 60px;
-  position: relative;
-  z-index: 1000;
 }
 
 .viva-nav .nav-link {
@@ -67,14 +64,63 @@ body {
   transition: color 0.3s ease;
   white-space: nowrap;
 }
-
 .viva-nav .navbar-nav .nav-item {
-  margin: 0 18px;
-}
+    margin:0 26px; }
 
 .viva-nav .nav-link:hover,
 .viva-nav .nav-link.active {
   color: #ed1379 !important;
+}
+
+/* Center links and give them space */
+.viva-nav .navbar-nav .nav-item {
+  margin: 0 18px;
+}
+
+/* Mobile: reduce side padding so menu looks clean and full width */
+@media (max-width: 991.98px) {
+  .viva-nav {
+    padding: 10px 16px;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 8px 0;
+  }
+
+  .btn-tickets {
+    width: 100%;
+  }
+
+  .viva-nav .navbar-toggler {
+    margin-left: auto;
+    border-color: #ed1379;
+  }
+
+  .navbar-toggler-icon {
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org%2F2000%2Fsvg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ed1379' stroke-width='3' d='M5 7h20M5 15h20M5 23h20'/%3E%3C/svg%3E");
+  }
+}
+
+
+@media (max-width: 991.98px) {
+  .viva-nav .navbar-toggler {      
+    margin-right: 0;
+    border-color: #ed1379;     
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ed1379' stroke-width='3' stroke-linecap='round' d='M5 7h20M5 15h20M5 23h20'/%3E%3C/svg%3E");
+  }
+
+  .viva-nav .navbar-toggler:hover,
+  .viva-nav .navbar-toggler:focus {
+    box-shadow: 0 0 8px rgba(237, 19, 121, 0.6);
+  }
 }
 
 .btn-tickets {
@@ -98,7 +144,6 @@ body {
   color: #fff;
 }
 
-
 .nav-dropdown {
   position: relative;
   display: inline-block;
@@ -116,6 +161,9 @@ body {
   cursor: pointer;
   padding: 10px 5px;
   display: inline-block;
+}
+
+.dropdown-toggle {
   list-style: none;
 }
 
@@ -124,7 +172,10 @@ body {
   content: none !important;
 }
 
-.dropdown-toggle:hover,
+.dropdown-toggle:hover {
+  color: #ed1379 !important;
+}
+
 .dropdown-toggle.active {
   color: #ed1379 !important;
 }
@@ -178,8 +229,7 @@ body {
   color: #666 !important;
 }
 
-.nav-dropdown:hover .dropdown-menu,
-.dropdown-menu:hover {
+.nav-dropdown:hover .dropdown-menu {
   display: block !important;
 }
 
@@ -187,39 +237,47 @@ body {
   color: #ed1379 !important;
 }
 
+.dropdown-menu:hover {
+  display: block !important;
+}
 
-@media (max-width: 991.98px) {
-  .viva-nav {
-    padding: 10px 16px;
+
+
+
+@media (max-width: 768px) {
+  .viva-standouts .row {
+    display: block;
   }
-
-  .navbar-collapse {
-    text-align: center;
-  }
-
-  .navbar-nav .nav-item {
-    margin: 8px 0;
-  }
-
-  .btn-tickets {
+  .viva-standouts .col-md-6 {
     width: 100%;
-  }
-
-  .viva-nav .navbar-toggler {
-    margin-left: auto;
-    margin-right: 0;
-    border-color: #ed1379;
-  }
-
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ed1379' stroke-width='3' stroke-linecap='round' d='M5 7h20M5 15h20M5 23h20'/%3E%3C/svg%3E");
-  }
-
-  .viva-nav .navbar-toggler:hover,
-  .viva-nav .navbar-toggler:focus {
-    box-shadow: 0 0 8px rgba(237, 19, 121, 0.6);
+    margin-bottom: 2rem;
   }
 }
+
+
+@media (max-width: 768px) {
+  .about-intro .row,
+  .impact-content,
+  .funder-wrapper,
+  .nonprofit-wrapper,
+  .form-columns,
+  .form-bottom,
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+  }
+}
+
+
 
 main {
   margin: 0;
@@ -276,7 +334,6 @@ main {
   transform: scale(1.03);
 }
 
-/* STANDOUTS SECTION */
 .viva-standouts {
   background: repeating-radial-gradient(#ffa500, #ed1379);
   color: #000;
@@ -312,31 +369,31 @@ main {
 
 .standout-pic {
   display: inline-block;
-  padding: 10px;
-  background: transparent;
-  border: 5px solid #fff;
-  border-radius: 20px;
-  transition: transform 0.3s ease;
+  padding: 10px;               
+  background: transparent;     
+  border: 5px solid #fff;     
+  border-radius: 20px;          
+transition: transform 0.3s ease;
 }
 
 .standout-pic:hover {
   transform: translateY(-10px);
-}
+} 
+
 
 .standout-pic img {
   display: block;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 10px;         
   object-fit: cover;
 }
 
 .anchor {
   display: block;
   position: relative;
-  top: -120px;
+  top: -120px;          
   visibility: hidden;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -554,7 +611,8 @@ html {
   }
 }
 
-/* ==== IMPACT PAGE ==== */
+
+/* IMPACT PAGE  */
 .impact-intro {
   padding: 80px 40px;
   background-color: #000;
@@ -574,8 +632,8 @@ html {
   font-size: 32px;
   font-weight: 700;
   color: #ed1379;
-  padding-left: 5px;
-  padding-right: 20px;
+  padding-left: 5px;  
+  padding-right: 20px;    
   line-height: 1.3;
   width: 75%;
 }
@@ -586,19 +644,20 @@ html {
   color: #ffa500;
   line-height: 1.6;
   font-style: italic;
-  padding-right: 20px;
+  padding-right: 20px;    
 }
 
 .impact-stats {
   background: linear-gradient(90deg, #ed1379, #ffa500);
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 10px;
+  padding-left: 20px;    
   display: flex;
   width: 100%;
-  margin-left: 30px;
+  margin-left: 30px;    
   flex-direction: column;
   gap: 20px;
-}
+} 
 
 .stat-item {
   display: flex;
@@ -609,7 +668,7 @@ html {
 
 .stat-icon {
   font-size: 28px;
-  color: #ffa500;
+  color: #ffa500;  
 }
 
 .stat-text {
@@ -620,9 +679,9 @@ html {
   color: #fff;
 }
 
-/* ==== FOUNDERS SECTION ==== */
+/* FOUNDERS SECTION */
 .founders-section {
-  padding: 35px 20px 30px 20px;
+  padding: 35px 20px 30px 20px;  
   background-color: #000;
   text-align: center;
 }
@@ -632,14 +691,14 @@ html {
   font-size: 32px;
   font-weight: 700;
   color: #ffa500;
-  margin-bottom: 32px;
+  margin-bottom: 32px;  
 }
 
 .founders-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  max-width: 900px;
+  gap: 24px;                 
+  max-width: 900px;           
   margin: 0 auto;
   align-items: center;
 }
@@ -648,8 +707,9 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 10px;              
 }
+
 
 .founder-item img {
   max-width: 150px;
@@ -669,30 +729,32 @@ html {
   margin: 0;
 }
 
+
 .founder-person {
   background: #ffb734;
   color: #fff;
-  text-shadow:
-    0 0 15px #ed1379,
+  text-shadow: 0 0 15px #ed1379,
     0 0 25px rgba(237, 19, 121, 0.8),
-    0 0 35px rgba(255, 165, 0, 0.6);
+    0 0 35px rgba(255, 165, 0, 0.6);    
   padding: 15px 30px;
   border-radius: 15px;
   font-size: 20px;
   width: fit-content;
 }
 
+
 .founder-center {
   grid-column: 2;
-  margin-top: 8px;
+  margin-top: 8px;      
 }
 
 .founder-bottom {
   grid-column: 2;
-  margin-top: 8px;
+  margin-top: 8px;          
 }
 
-/* REAL STORIES SECTION */
+
+
 .real-stories-section {
   padding: 40px;
   background: linear-gradient(135deg, #ed1379, #ffa500);
@@ -758,6 +820,10 @@ html {
 }
 
 
+
+
+/*EVENTS PAGE */
+
 .slider-section {
   background: linear-gradient(180deg, #ffa500 0%, #ed1379 100%);
   padding: 40px 20px;
@@ -784,11 +850,12 @@ html {
   border-radius: 20px;
 }
 
+
 .slider-caption {
   text-align: center;
   color: #000;
   font-family: "Source Sans 3", sans-serif;
-  font-style: italic;
+  font-style: italic; 
   font-size: 16px;
   max-width: 700px;
   margin: 20px auto 0 auto;
@@ -796,7 +863,8 @@ html {
   padding: 0 20px;
 }
 
-/* ==== NONPROFITS SECTION ==== */
+
+/* NONPROFITS SECTION */
 .nonprofits-section {
   background-color: #000;
   color: #fff;
@@ -806,6 +874,14 @@ html {
 
 .star-accent {
   color: #ffa500;
+}
+
+.section-title {
+  color: #ed1379;
+  font-family: "PT Serif", serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
 }
 
 .nonprofit-grid {
@@ -870,7 +946,23 @@ html {
   text-decoration: underline;
 }
 
-/* ==== BECOME A FUNDER PAGE ==== */
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .nonprofit-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+
+  .section-title {
+    font-size: 24px;
+  }
+
+}
+
+
+/* BECOME A FUNDER PAGE */
+
 .funder-section {
   padding: 60px 40px;
   background-color: #000;
@@ -919,7 +1011,7 @@ html {
 .benefit-icon {
   font-size: 18px;
   flex-shrink: 0;
-  color: #ffa500;
+  Color: #ffa500;
 }
 
 .benefit-content {
@@ -933,7 +1025,7 @@ html {
   font-weight: 700;
   color: #ffa500;
   margin-bottom: 4px;
-  font-size: 18px;
+ font-size: 18px;
 }
 
 .benefit-content p {
@@ -941,7 +1033,7 @@ html {
   line-height: 1.5;
 }
 
-/* ==== SHARED FORM STYLES (Funder + Nonprofit) ==== */
+/* FORM SECTION */
 .form-section {
   padding: 40px 40px 60px 40px;
   background-color: #000;
@@ -951,13 +1043,13 @@ html {
   background: linear-gradient(135deg, #ffa500, #ed1379);
   border-radius: 20px;
   padding: 50px;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .form-heading {
   font-family: "PT Serif", serif;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
   color: #000;
   text-align: center;
@@ -985,11 +1077,215 @@ form {
   display: flex;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: none;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 15px;
+  background: #fff;
+  color: #333;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #ed1379;
+  outline-offset: 2px;
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill='%23666' d='M0 0l6 8 6-8z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+  min-height: 180px;
+}
+
+.btn-submit {
+  background: #ed1379;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 12px 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-submit:hover {
+  background: #fff;
+  color: #ed1379;
+  border-color: #ed1379;
+  transform: scale(1.05);
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .funder-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .form-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .form-box {
+    padding: 30px;
+  }
+
+  .form-heading {
+    font-size: 26px;
+  }
+
+  .funder-left h2 {
+    font-size: 28px;
+  }
+}
+
+
+
+/*REGISTER YOUR NONPROFIT PAGE */
+
+.nonprofit-section {
+  padding: 60px 40px;
+  background-color: #000;
+}
+
+.nonprofit-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.nonprofit-left h2 {
+  font-family: "PT Serif", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ed1379;
+  margin: 0 0 15px 0;
+}
+
+.nonprofit-left p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.nonprofit-right h3 {
+  font-family: "PT Serif", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ed1379;
+  margin: 0 0 10px 0;
+}
+
+.looking-intro {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  color: #ffa500;
+  font-style: italic;
+  margin: 0 0 15px 0;
+}
+
+.looking-for {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  align-items: flex-start;
+}
+
+.looking-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+  color: #ffa500;
+}
+
+.looking-content {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+.looking-content strong {
+  font-weight: 700;
+  color: #fff;
+  display: inline;
+}
+
+.looking-content p {
+  margin: 0;
+  display: inline;
+}
+
+
+.form-section {
+  padding: 40px 40px 60px 40px;
+  background-color: #000;
+}
+
+.form-box {
+  background: linear-gradient(135deg, #ffa500, #ed1379);
+  border-radius: 20px;
+  padding: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.form-heading {
+  font-family: "PT Serif", serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+form {
+  width: 100%;
+}
+
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-bottom: 25px;
+}
+
+.form-col-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-col-right {
+  display: flex;
 }
 
 .form-bottom {
@@ -1072,229 +1368,42 @@ textarea {
   transform: scale(1.05);
 }
 
-/* ==== REGISTER YOUR NONPROFIT PAGE ==== */
-.nonprofit-section {
-  padding: 60px 40px;
-  background-color: #000;
-}
-
-.nonprofit-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: start;
-}
-
-.nonprofit-left h2 {
-  font-family: "PT Serif", serif;
-  font-size: 32px;
-  font-weight: 700;
-  color: #ed1379;
-  margin: 0 0 15px 0;
-}
-
-.nonprofit-left p {
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 16px;
-  color: #fff;
-  line-height: 1.7;
-  margin: 0;
-}
-
-.nonprofit-right h3 {
-  font-family: "PT Serif", serif;
-  font-size: 32px;
-  font-weight: 700;
-  color: #ed1379;
-  margin: 0 0 10px 0;
-}
-
-.looking-intro {
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 16px;
-  color: #ffa500;
-  font-style: italic;
-  margin: 0 0 15px 0;
-}
-
-.looking-for {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 16px;
-  align-items: flex-start;
-}
-
-.looking-icon {
-  font-size: 18px;
-  flex-shrink: 0;
-  color: #ffa500;
-}
-
-.looking-content {
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 16px;
-  color: #fff;
-}
-
-.looking-content strong {
-  font-weight: 700;
-  color: #fff;
-  display: inline;
-}
-
-.looking-content p {
-  margin: 0;
-  display: inline;
-}
-
-/* ==== FOOTER ==== */
-.viva-footer {
-  background-color: #ed1379;
-  color: #fff;
-  font-family: "Source Sans 3", sans-serif;
-  padding: 10px 20px;
-}
-
-.viva-footer .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.black-line {
-  height: 3px;
-  width: 150px;
-  background-color: #000;
-  border-radius: 2px;
-}
-
-.footer-left {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.footer-left img {
-  height: 70px;
-  width: auto;
-}
-
-.footer-left h6 {
-  font-family: "PT Serif", serif;
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0 0 5px 0;
-  color: #fff;
-}
-
-.footer-left p {
-  font-size: 14px;
-  margin: 0;
-  color: #fff;
-  line-height: 1.5;
-}
-
-.footer-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.footer-icons a {
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.footer-icons img {
-  height: 35px;
-  width: 35px;
-  transition: transform 0.3s ease;
-  border-radius: 7px;
-}
-
-.footer-icons a:hover img {
-  transform: scale(1.1);
-}
-
-.viva-footer p {
-  font-size: 14px;
-  margin: 0;
-  color: #fff;
-}
-
-/* ==== GLOBAL RESPONSIVE (<= 768px) ==== */
+/* ==== RESPONSIVE ==== */
 @media (max-width: 768px) {
-  /* Standouts */
-  .viva-standouts .row {
-    display: block;
+  .nonprofit-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  .viva-standouts .col-md-6 {
-    width: 100%;
-    margin-bottom: 2rem;
+  .form-grid {
+    grid-template-columns: 1fr;
   }
 
-  /* Layout grids to single column */
-  .about-intro .row,
-  .impact-content,
-  .funder-wrapper,
-  .nonprofit-wrapper,
-  .form-columns,
-  .form-bottom,
-  .form-grid,
-  .story-content,
-  .cards-container,
-  .nonprofit-grid {
-    grid-template-columns: 1fr !important;
+  .form-bottom {
+    grid-template-columns: 1fr;
   }
 
-  /* Inputs full-width (safety for smaller screens) */
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  select,
-  textarea {
-    width: 100%;
-  }
-
-  /* Section titles smaller */
-  .section-title,
-  .stories-title,
-  .founders-title {
-    font-size: 24px;
-  }
-
-  /* About intro stack */
-  .about-intro .row {
-    gap: 30px;
-  }
-
-  /* Forms / funder / nonprofit tweaks */
   .form-box {
     padding: 30px;
   }
 
-  .form-heading {
-    font-size: 26px;
-  }
-
-  .funder-left h2,
   .nonprofit-left h2,
   .nonprofit-right h3 {
     font-size: 28px;
   }
+}
 
-  /* Nonprofits grid */
-  .nonprofit-grid {
-    gap: 30px;
+
+/* RESPONSIVE*/
+@media (max-width: 768px) {
+  .nonprofit-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  /* Footer & general layout adjustments if needed later */
+  .nonprofit-left h2 {
+    font-size: 28px;
+  }
 }
 
 
@@ -1391,4 +1500,3 @@ textarea {
   }
 
 }
-
