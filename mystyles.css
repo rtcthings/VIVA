@@ -399,53 +399,68 @@ html {
 }
 
 /*ABOUT PAGE*/
-.about-intro {
-  padding: 60px 40px;
-  background-color: #000;
+
+.about-intro .row {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr; 
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 
 .about-intro .text-section {
   display: flex;
+  flex-direction: column;      
   justify-content: center;
+  padding-right: 30px;
 }
 
+/* heading */
 .about-intro .text-section h2 {
-  font-family: "PT Serif", serif;
-  font-size: 32px;
-  font-weight: 700;
-  color: #ed1379;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-top: 0;
+  margin: 0 0 16px 0;          
+  line-height: 1.2;
+  text-align: left;
 }
+
 
 .about-intro .text-section p {
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 16px;
-  color: #fff;
-  line-height: 1.7;
-  font-weight: 400;
-  margin-left: 20px; 
+  margin: 0;
+  max-width: 640px;          
+  line-height: 1.5;
+  text-align: left;
 }
 
-.about-intro .image-section {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .about-intro .image-section img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 380px;           
   height: auto;
-  border-radius: 20px;
-  transition: transform 0.3s ease;
 }
 
-.about-intro .image-section img:hover {
-  transform: scale(1.05);
+
+@media (max-width: 768px) {
+  .about-intro .row {
+    display: block;
+  }
+
+  .about-intro .text-section {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .about-intro .text-section h2,
+  .about-intro .text-section p {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .about-intro .image-section img {
+    max-width: 320px;
+  }
 }
+
 
 .quote-section {
   padding: 60px 40px;
