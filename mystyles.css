@@ -278,7 +278,6 @@ body {
 }
 
 
-
 main {
   margin: 0;
   padding: 0;
@@ -400,16 +399,6 @@ html {
 
 /*ABOUT PAGE*/
 
-.about-intro .row {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr; 
-  gap: 40px;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-
 .about-intro .text-section {
   display: flex;
   flex-direction: column;      
@@ -417,7 +406,7 @@ html {
   padding-right: 30px;
 }
 
-/* heading */
+
 .about-intro .text-section h2 {
   margin: 0 0 16px 0;          
   line-height: 1.2;
