@@ -425,7 +425,7 @@ html {
   width: 100%;
   max-width: 380px;           
   height: auto;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 
@@ -563,7 +563,7 @@ html {
   margin-bottom: 10px;
 }
 
-/* Only fade in star + paragraph */
+
 .star,
 .card-text {
   opacity: 0;
