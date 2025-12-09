@@ -299,7 +299,6 @@ main {
   max-width: 40%;
   height: auto;
   display: block;
-  margin: 0 auto 30px auto;
   margin-top: 3px;
   padding: 0;
 }
@@ -439,7 +438,7 @@ html {
   width: 100%;
   max-width: 380px;           
   height: auto;
-  padding-left: 40px;
+  padding-left: 60px;
 }
 
 
