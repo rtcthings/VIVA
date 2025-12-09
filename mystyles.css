@@ -300,8 +300,7 @@ main {
   height: auto;
   display: block;
   align-item: center;
-  margin: auto 30px auto;
-  margin-top: 10px;
+  margin: 10px auto 30px auto;
   padding: 0;
 }
 
