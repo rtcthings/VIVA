@@ -50,7 +50,7 @@ body {
   background-color: #000;
   border-bottom: 2px solid #ed1379;
   gap: 50px;
-  padding: 15px 270px;
+  padding: 15px 250px;
   min-height: 60px;
 }
 
@@ -65,7 +65,7 @@ body {
   white-space: nowrap;
 }
 .viva-nav .navbar-nav .nav-item {
-    margin:0 25px; }
+    margin:0 30px; }
 
 .viva-nav .nav-link:hover,
 .viva-nav .nav-link.active {
@@ -75,10 +75,6 @@ body {
 .viva-nav .navbar-nav {
   align-items: center;
   justify-content: center !important;
-}
-
-.viva-nav .navbar-nav .nav-item {
-  margin: 0 25px;
 }
 
 @media (max-width: 991.98px) {
@@ -135,7 +131,7 @@ body {
   font-weight: 700;
   font-size: 17px;
   padding: 15px 24px;
-  padding-left: 30px;
+  padding-left: 40px;
   transition: all 0.3s ease;
   cursor: pointer;
   text-decoration: none;
