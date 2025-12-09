@@ -66,9 +66,13 @@ body {
 }
 .viva-nav .navbar-nav .nav-item {
     margin:0 50px; 
-  align-items: center;
-  justify-content: center !important;
 }
+
+.viva-nav .navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
 
 .viva-nav .nav-link:hover,
 .viva-nav .nav-link.active {
@@ -140,6 +144,9 @@ body {
   white-space: nowrap;
 }
 
+.viva-nav .navbar-nav .nav-item:last-child {
+  margin-left: 40px;
+}
 
 .btn-tickets:hover {
   background: #ffa500;
