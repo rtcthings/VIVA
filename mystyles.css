@@ -719,17 +719,14 @@ html {
   justify-content: center;
   align-items: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
 }
 
-.founder-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(237, 19, 121, 0.5);
-}
+
 
 .founder-item img {
-  max-width: 160px;
-  max-height: 100px;
+  max-width: 200px;
+  max-height: 150px;
   object-fit: contain;
   margin-bottom: 10px;
 }
