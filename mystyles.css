@@ -276,6 +276,7 @@ body {
   }
 }
 
+/* HOME PAGE */
 
 main {
   margin: 0;
@@ -684,8 +685,9 @@ html {
 }
 
 
+/* ==== FOUNDERS SECTION ==== */
 .founders-section {
-  padding: 35px 20px 30px 20px;  
+  padding: 50px 20px 40px 20px;
   background-color: #000;
   text-align: center;
 }
@@ -695,67 +697,34 @@ html {
   font-size: 32px;
   font-weight: 700;
   color: #ffa500;
-  margin-bottom: 32px;  
+  margin-bottom: 24px;
 }
 
+/* Make a responsive grid of equal-sized cards */
 .founders-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;                 
-  max-width: 900px;           
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
   margin: 0 auto;
-  align-items: center;
+  align-items: stretch;
 }
 
+/* Each existing .founder-item becomes a card */
 .founder-item {
+  background: radial-gradient(circle at top, #ed1379, #ffa500);
+  border-radius: 18px;
+  padding: 18px 16px;
+  min-height: 160px;                 /* same visual size for all */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 10px;              
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-
-.founder-item img {
-  max-width: 150px;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.founder-item img:hover {
-  transform: scale(1.05);
-}
-
-.founder-name {
-  font-family: "PT Serif", serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #fff;
-  margin: 0;
-}
-
-
-.founder-person {
-  background: #ffb734;
-  color: #fff;
-  text-shadow: 0 0 15px #ed1379,
-    0 0 25px rgba(237, 19, 121, 0.8),
-    0 0 35px rgba(255, 165, 0, 0.6);    
-  padding: 15px 30px;
-  border-radius: 15px;
-  font-size: 20px;
-  width: fit-content;
-}
-
-
-.founder-center {
-  grid-column: 2;
-  margin-top: 8px;      
-}
-
-.founder-bottom {
-  grid-column: 2;
-  margin-top: 8px;          
-}
+.founder-item:
 
 
 
