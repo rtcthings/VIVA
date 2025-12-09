@@ -882,15 +882,18 @@ html {
 }
 
 .centered-slider .ws_images ul {
-  height: 400px !important;
+  height: 100% !important;
 }
 
 .centered-slider .ws_images img {
   width: 100%;
-  height: 384px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;         
+  object-position: center;      
   border-radius: 20px;
+  display: block;
 }
+
 
 
 .slider-caption {
@@ -904,7 +907,6 @@ html {
   line-height: 1.6;
   padding: 0 20px;
 }
-
 
 
 .nonprofits-section {
