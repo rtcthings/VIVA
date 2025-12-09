@@ -300,6 +300,7 @@ main {
   height: auto;
   display: block;
   margin: 0 auto 30px auto;
+  margin-top: 3px;
   padding: 0;
 }
 
