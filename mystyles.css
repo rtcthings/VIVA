@@ -49,7 +49,7 @@ body {
 .viva-nav {
   background-color: #000;
   border-bottom: 2px solid #ed1379;
-  gap: 40px;
+  gap: 50px;
   padding: 15px 270px;
   min-height: 60px;
 }
@@ -131,6 +131,7 @@ body {
   font-weight: 700;
   font-size: 17px;
   padding: 15px 24px;
+  padding-left: 30px;
   transition: all 0.3s ease;
   cursor: pointer;
   text-decoration: none;
@@ -725,8 +726,8 @@ html {
 
 
 .founder-item img {
-  max-width: 250px;
-  max-height: 200px;
+  max-width: 300px;
+  max-height: 250px;
   object-fit: contain;
   margin-bottom: 5px;
 }
