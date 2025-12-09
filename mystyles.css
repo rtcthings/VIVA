@@ -725,10 +725,10 @@ html {
 
 
 .founder-item img {
-  max-width: 200px;
-  max-height: 150px;
+  max-width: 250px;
+  max-height: 200px;
   object-fit: contain;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .founder-name {
@@ -784,11 +784,6 @@ html {
   .founder-item {
     flex: 0 1 160px;
     height: 180px;
-  }
-
-  .founder-item img {
-    max-width: 200px;
-    max-height: 150px;
   }
 }
 
