@@ -7,7 +7,7 @@ body {
   padding: 0;
 }
 
-/* ==== HEADER ==== */
+/* HEADER */
 .viva-header {
   background: linear-gradient(90deg, #ed1379, #ffa500);
   height: 120px;
@@ -45,7 +45,7 @@ body {
   text-align: left;
 }
 
-/* ==== NAVIGATION ==== */
+/* NAV */
 .viva-nav {
   background-color: #000;
   border-bottom: 2px solid #ed1379;
@@ -491,7 +491,7 @@ html {
   margin: 20px 0;
 }
 
-/* WHAT DRIVES VIVA SECTION */
+
 .viva-drives-section {
   padding: 20px 40px;
   background-color: #000;
@@ -588,7 +588,7 @@ html {
   max-width: 90%;
 }
 
-/* Chevron animation */
+
 .chevron {
   position: absolute;
   bottom: 15px;
@@ -599,7 +599,7 @@ html {
   transform: rotate(180deg);
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
   .cards-container {
     grid-template-columns: 1fr;
@@ -683,7 +683,7 @@ html {
   color: #fff;
 }
 
-/* FOUNDERS SECTION */
+
 .founders-section {
   padding: 35px 20px 30px 20px;  
   background-color: #000;
@@ -868,7 +868,7 @@ html {
 }
 
 
-/* NONPROFITS SECTION */
+
 .nonprofits-section {
   background-color: #000;
   color: #fff;
@@ -950,7 +950,6 @@ html {
   text-decoration: underline;
 }
 
-/* ==== RESPONSIVE ==== */
 @media (max-width: 768px) {
   .nonprofit-grid {
     grid-template-columns: 1fr;
@@ -1037,7 +1036,7 @@ html {
   line-height: 1.5;
 }
 
-/* FORM SECTION */
+
 .form-section {
   padding: 40px 40px 60px 40px;
   background-color: #000;
@@ -1144,7 +1143,7 @@ textarea {
   transform: scale(1.05);
 }
 
-/* ==== RESPONSIVE ==== */
+
 @media (max-width: 768px) {
   .funder-wrapper {
     grid-template-columns: 1fr;
@@ -1372,7 +1371,7 @@ textarea {
   transform: scale(1.05);
 }
 
-/* ==== RESPONSIVE ==== */
+
 @media (max-width: 768px) {
   .nonprofit-wrapper {
     grid-template-columns: 1fr;
@@ -1398,7 +1397,7 @@ textarea {
 }
 
 
-/* RESPONSIVE*/
+
 @media (max-width: 768px) {
   .nonprofit-wrapper {
     grid-template-columns: 1fr;
@@ -1409,8 +1408,6 @@ textarea {
     font-size: 28px;
   }
 }
-
-
 
 
 
@@ -1492,7 +1489,7 @@ textarea {
   color: #fff;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
   .cards-container {
     grid-template-columns: 1fr;
