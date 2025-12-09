@@ -1017,6 +1017,16 @@ html {
   background-color: #000;
 }
 
+.funder-left p {
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+
+.funder-left {
+  padding-right: 20px;
+}
+
+
 .funder-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1222,6 +1232,14 @@ textarea {
   background-color: #000;
 }
 
+.nonprofit-left p {
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+
+.nonprofit-left {
+  padding-right: 20px;
+}
 .nonprofit-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
