@@ -684,8 +684,9 @@ html {
   color: #fff;
 }
 
+/* ==== FOUNDERS SECTION ==== */
 .founders-section {
-  padding: 35px 20px 30px 20px;  
+  padding: 50px 20px 40px 20px;
   background-color: #000;
   text-align: center;
 }
@@ -695,68 +696,95 @@ html {
   font-size: 32px;
   font-weight: 700;
   color: #ffa500;
-  margin-bottom: 32px;  
+  margin-bottom: 24px;
 }
 
+/* Responsive row of equal-sized tiles */
 .founders-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;                 
-  max-width: 900px;           
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
   margin: 0 auto;
-  align-items: center;
 }
 
+/* Each founder-item becomes a same-size tile */
 .founder-item {
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle at top, #ed1379, #ffa500);
+  border-radius: 18px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 10px;              
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.founder-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(237, 19, 121, 0.5);
+}
 
+/* Logos inside tiles */
 .founder-item img {
-  max-width: 150px;
-  height: auto;
-  transition: transform 0.3s ease;
+  max-width: 130px;
+  max-height: 70px;
+  object-fit: contain;
+  margin-bottom: 10px;
 }
 
-.founder-item img:hover {
-  transform: scale(1.05);
-}
-
+/* Base text style */
 .founder-name {
   font-family: "PT Serif", serif;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
-  color: #fff;
   margin: 0;
+  text-align: center;
+  color: #000;
 }
 
-
+/* Highlight the people names a bit more */
 .founder-person {
-  background: #ffb734;
   color: #fff;
-  text-shadow: 0 0 15px #ed1379,
-    0 0 25px rgba(237, 19, 121, 0.8),
-    0 0 35px rgba(255, 165, 0, 0.6);    
-  padding: 15px 30px;
-  border-radius: 15px;
-  font-size: 20px;
-  width: fit-content;
+  font-size: 18px;
+  text-shadow:
+    0 0 10px rgba(0, 0, 0, 0.7),
+    0 0 18px rgba(237, 19, 121, 0.8);
 }
 
-
-.founder-center {
-  grid-column: 2;
-  margin-top: 8px;      
-}
-
+/* Turn off old manual grid tricks */
+.founder-center,
 .founder-bottom {
-  grid-column: 2;
-  margin-top: 8px;          
+  margin-top: 0;
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+  .founders-section {
+    padding: 40px 20px 30px 20px;
+  }
+
+  .founders-title {
+    font-size: 28px;
+  }
+
+  .founders-container {
+    gap: 16px;
+  }
+}
+
+
+
+.real-stories-section {
+  padding: 40px;
+  background: linear-gradient(135deg, #ed1379, #ffa500);
+  border-radius: 20px;
+  margin: 60px 40px;
+}
 
 .stories-container {
   max-width: 1000px;
