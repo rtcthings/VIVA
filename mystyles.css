@@ -300,7 +300,7 @@ main {
   height: auto;
   display: block;
   align-item: center;
-  margin-top: 3px;
+  margin: 4px auto 30px auto;
   padding: 0;
 }
 
@@ -436,11 +436,12 @@ html {
 
 
 .about-intro .image-section img {
-  width: 100%;
-  max-width: 380px;           
+  max-width: 420px;
+  width: auto;      
   height: auto;
-  margin-left: 50px;
+  margin-left: 60px;
 }
+
 
 
 @media (max-width: 768px) {
