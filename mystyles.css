@@ -130,15 +130,16 @@ body {
   font-weight: 700;
   font-size: 17px;
   text-align: center;
-  padding: 15px 24px;
-  padding-left: 40px;
+  padding: 15px 32px;       
   transition: all 0.3s ease;
   cursor: pointer;
   text-decoration: none;
   display: inline-flex;
-  justify-content: center;
+  align-items: center;       
+  justify-content: center;   
   white-space: nowrap;
 }
+
 
 .btn-tickets:hover {
   background: #ffa500;
