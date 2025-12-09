@@ -65,17 +65,16 @@ body {
   white-space: nowrap;
 }
 .viva-nav .navbar-nav .nav-item {
-    margin:0 30px; }
+    margin:0 50px; 
+  align-items: center;
+  justify-content: center !important;
+}
 
 .viva-nav .nav-link:hover,
 .viva-nav .nav-link.active {
   color: #ed1379 !important;
 }
 
-.viva-nav .navbar-nav {
-  align-items: center;
-  justify-content: center !important;
-}
 
 @media (max-width: 991.98px) {
   .viva-nav {
@@ -726,8 +725,8 @@ html {
 
 
 .founder-item img {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 160px;
+  max-height: 180px;
   object-fit: contain;
   margin-bottom: 5px;
 }
