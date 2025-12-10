@@ -443,6 +443,11 @@ html {
   margin-left: 60px;
 }
 
+.image-caption {
+  color: #fff;
+  opacity: 0.8;
+  font-style: italic;
+}
 
 
 @media (max-width: 768px) {
