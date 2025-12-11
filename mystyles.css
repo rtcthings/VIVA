@@ -31,7 +31,7 @@ body {
 .viva-header .logo {
   height: 150px;
   width: auto;
-  padding-right: 20px;
+  padding-right: 12px;
   padding-top: 7px;
 }
 
@@ -450,8 +450,9 @@ html {
   width: auto;
   height: auto;
   display: block;
-  margin: 0 auto 2px auto;  
+  margin: 0 auto;
 }
+
 
 .image-caption {
   font-family: "Source Sans 3", sans-serif;
@@ -460,7 +461,7 @@ html {
   color: #fff;
   text-align: center;
   line-height: 1.3;
-  margin-top: 2px;
+  margin-top: 0px;
 }
 
 @media (max-width: 768px) {
