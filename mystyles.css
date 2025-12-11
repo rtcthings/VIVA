@@ -300,7 +300,7 @@ main {
   height: auto;
   display: block;
   align-item: center;
-  margin: 15px auto 30px auto;
+  margin: 18px auto 30px auto;
   padding: 0;
 }
 
@@ -453,7 +453,8 @@ html {
 .image-caption {
   font-family: "Source Sans 3", sans-serif;
   font-size: 14px;
-  color: #ffa500;
+  font-style: italic;
+  color: #000;
   margin-top: 2px;
   padding-left: 5px;
   text-align: center;
