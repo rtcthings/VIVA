@@ -454,7 +454,7 @@ html {
 
 .about-intro .image-section img {
   display: block;
-  margin: 0 auto;
+  margin-bottom: 2px;
 }
 
 .image-caption {
@@ -464,7 +464,7 @@ html {
   color: #fff;
   text-align: center;
   line-height: 1.3;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
 
