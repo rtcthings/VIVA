@@ -682,22 +682,49 @@ html {
   padding-right: 20px;    
 }
 
-/* IMPACT BOX CONFETTI */
 .impact-stats {
   position: relative;
-  overflow: hidden;        
+  overflow: hidden;
+  background: linear-gradient(90deg, #ed1379, #ffa500);
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  width: 100%;
+  margin-left: 30px;
+  flex-direction: column;
+  gap: 20px;
 }
-
 
 .impact-stats .stat-item {
   position: relative;
   z-index: 2;
 }
 
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+}
+
+.stat-icon {
+  font-size: 28px;
+  color: #ffa500;
+}
+
+.stat-text {
+  font-family: "PT Serif", serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+
 .confetti-layer {
   position: absolute;
   inset: 0;
-  pointer-events: none;      
+  pointer-events: none;
   z-index: 1;
 }
 
@@ -728,63 +755,18 @@ html {
 
 @keyframes confetti-fall {
   0% {
-    transform: translateY(-40px) rotate(0deg);  
+    transform: translateY(-40px) rotate(0deg);
     opacity: 1;
   }
   70% {
-    opacity: 1;  
+    opacity: 1;
   }
   100% {
-    transform: translateY(200%) rotate(360deg); 
+    transform: translateY(200%) rotate(360deg);
     opacity: 0;
   }
 }
-.impact-box .confetti-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;  
-  overflow: visible;
-  z-index: 5;           
-}
 
-}
-
-
-
-.impact-stats {
-  background: linear-gradient(90deg, #ed1379, #ffa500);
-  border-radius: 20px;
-  padding: 10px;
-  padding-left: 20px;    
-  display: flex;
-  width: 100%;
-  margin-left: 30px;    
-  flex-direction: column;
-  gap: 20px;
-} 
-
-.stat-item {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  color: #fff;
-}
-
-.stat-icon {
-  font-size: 28px;
-  color: #ffa500;  
-}
-
-.stat-text {
-  font-family: "PT Serif", serif;
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0;
-  color: #fff;
-}
 
 .founders-section {
   padding: 50px 20px 40px 20px;
