@@ -518,7 +518,7 @@ html {
   height: 2px;
   background: linear-gradient(90deg, transparent, #ed1379, transparent);
   margin: 20px 0;
-  Margin-top: 10px;
+  margin-top: 20px;
   
 }
 
@@ -738,6 +738,16 @@ html {
     transform: translateY(200%) rotate(360deg); 
     opacity: 0;
   }
+}
+.impact-box .confetti-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;  
+  overflow: visible;
+  z-index: 5;           
 }
 
 }
