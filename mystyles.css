@@ -427,6 +427,7 @@ html {
 }
 
 
+
 .about-intro .image-section {
   text-align: center;
 }
@@ -435,7 +436,7 @@ html {
   display: inline-block;
   margin: 0;
   padding: 0;
-  line-height: 0; 
+  line-height: 0;
 }
 
 .about-intro .image-section img {
@@ -443,14 +444,14 @@ html {
   width: auto;
   height: auto;
   display: block;
-  margin: 0 auto;   
+  margin: 0 auto;
   padding: 0;
   border: 0;
 }
 
-.about-intro .image-caption {
-  margin-top: -8px;
+.image-caption {
   padding: 0;
+  margin-top: 0;       
   line-height: 1.1;
   font-family: "Source Sans 3", sans-serif;
   font-size: 14px;
@@ -458,6 +459,7 @@ html {
   color: #fff;
   text-align: center;
 }
+
 
 
 
