@@ -443,22 +443,28 @@ html {
   margin-left: 60px;
 }
 
-.image-section figure {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0; 
+.about-intro .image-section {
+  text-align: center;
+}
+
+.about-intro .image-section figure {
+  display: inline-block; 
+  margin: 0;
+}
+
+.about-intro .image-section img {
+  display: block;
+  margin: 0 auto;
 }
 
 .image-caption {
   font-family: "Source Sans 3", sans-serif;
   font-size: 14px;
   font-style: italic;
-  color: #000;
-  margin-top: 2px;
-  padding-left: 5px;
+  color: #fff;
   text-align: center;
   line-height: 1.3;
+  margin-top: 3px;
 }
 
 
