@@ -461,8 +461,6 @@ html {
 }
 
 
-
-
 @media (max-width: 768px) {
   .about-intro .row {
     display: block;
@@ -479,10 +477,6 @@ html {
     max-width: 100%;
   }
 
-  .about-intro .image-section img {
-    max-width: 420px;
-    margin: 0 auto 2px auto;  
-  }
 }
 
 
