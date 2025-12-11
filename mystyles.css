@@ -31,7 +31,7 @@ body {
 .viva-header .logo {
   height: 150px;
   width: auto;
-  padding-right: 10px;
+  padding-right: 8px;
   padding-top: 7px;
 }
 
@@ -40,7 +40,6 @@ body {
   color: #000;
   font-weight: 700;
   font-size: 28px;
-  margin: 0;
   flex: 1;
   text-align: left;
 }
